@@ -407,10 +407,11 @@ main {
     padding-top: 50px;
     padding-bottom: 70px;
     min-width: 320px;
+    color: var(--off-white);
 }
 
 .arrangements-container-title {
-    width: 90%;
+    width: 95%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
@@ -431,4 +432,163 @@ main {
     line-height: 1.8rem;
     color: #757575;
     margin-bottom: 50px;
+}
+.plans-container--slider {
+    display: flex;
+    gap: 50px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container--card {
+    position: relative; /*para generar el efecto flotante*/
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgb(89, 73, 38, 0.16);
+    border-radius: 15px;
+}
+
+.recommended { /*la etiqueta de texto si se puede dimensionar*/
+    position: absolute; /*el padre tiene posición relative*/
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px; /*interior*/
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-family:'Inter', 'sans serif'
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card--price {
+    padding: 3px 0;
+    font-weight: bolder ;
+    font-size: 5.2rem;
+    line-height: 5.0rem;
+    color: black;
+    letter-spacing: -5px;
+    font-family:'Inter', 'sans serif'
+}
+.plan-card--price span {
+    font-weight: 300;
+    font-size: 1.2rem;
+    vertical-align: 30px;
+}
+.plan-card--saving {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #757575;
+    margin-top: 7px;
+}
+.plan-card--ca {
+    width: 151px;
+    height: 48px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom;
+}
+
+.recommended--two { /*la etiqueta de texto si se puede dimensionar*/
+    position: absolute; /*el padre tiene posición relative*/
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px; /*interior*/
+    background-color:var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-family:'Inter', 'sans serif'
+}
+
+.recommended--three { /*la etiqueta de texto si se puede dimensionar*/
+    position: absolute; /*el padre tiene posición relative*/
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px; /*interior*/
+    background-color:var(--soft-blue);
+    border-radius: 8px;
+    color: var(--black);
+    font-family:'Inter', 'sans serif'
+}
+
+.plan-card--two {
+    width: 151px;
+    height: 48px;
+    background-color: #faf8f7;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+.plan-card--three {
+    width: 151px;
+    height: 48px;
+    background-color: #faf8f7;
+    border: 2px solid rgb(140, 161, 245);
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+.plan-card--two span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/right-arrow.svg);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+.plan-card--three span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/right-arrow.svg);
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top: 4px;
+    left: 40px;
 }
