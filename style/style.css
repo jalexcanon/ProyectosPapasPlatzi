@@ -337,7 +337,7 @@ main {
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
@@ -345,7 +345,7 @@ main {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-right: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -459,11 +459,39 @@ main {
     position: absolute; /*el padre tiene posición relative*/
     width: 120px;
     height: 31px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     left: calc(50% - 60px);
     top: -15px;
     padding: 6px; /*interior*/
     background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-family:'Inter', 'sans serif'
+}
+
+.recommended--two { /*la etiqueta de texto si se puede dimensionar*/
+    position: absolute; /*el padre tiene posición relative*/
+    width: 120px;
+    height: 31px;
+    font-size: 1.5rem;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px; /*interior*/
+    background-color:var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-family:'Inter', 'sans serif'
+}
+
+.recommended--three { /*la etiqueta de texto si se puede dimensionar*/
+    position: absolute; /*el padre tiene posición relative*/
+    width: 120px;
+    height: 31px;
+    font-size: 1.5rem;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px; /*interior*/
+    background-color:#595757;
     border-radius: 8px;
     color: var(--just-white);
     font-family:'Inter', 'sans serif'
@@ -518,34 +546,6 @@ main {
     vertical-align: text-bottom;
 }
 
-.recommended--two { /*la etiqueta de texto si se puede dimensionar*/
-    position: absolute; /*el padre tiene posición relative*/
-    width: 120px;
-    height: 31px;
-    font-size: 1.2rem;
-    left: calc(50% - 60px);
-    top: -15px;
-    padding: 6px; /*interior*/
-    background-color:var(--secondary-blue);
-    border-radius: 8px;
-    color: var(--just-white);
-    font-family:'Inter', 'sans serif'
-}
-
-.recommended--three { /*la etiqueta de texto si se puede dimensionar*/
-    position: absolute; /*el padre tiene posición relative*/
-    width: 120px;
-    height: 31px;
-    font-size: 1.2rem;
-    left: calc(50% - 60px);
-    top: -15px;
-    padding: 6px; /*interior*/
-    background-color:var(--soft-blue);
-    border-radius: 8px;
-    color: var(--black);
-    font-family:'Inter', 'sans serif'
-}
-
 .plan-card--two {
     width: 151px;
     height: 48px;
@@ -563,7 +563,7 @@ main {
     width: 151px;
     height: 48px;
     background-color: #faf8f7;
-    border: 2px solid rgb(140, 161, 245);
+    border: 2px solid #595757;
     border-radius: 4px;
     margin-top: 20px;
     font-size: 1.4rem;
@@ -576,21 +576,15 @@ main {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(/assets/icons/right-arrow.svg);
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-top: 4px;
+    background-image: url(/assets/icons/blue--right-arrow.png);
+    vertical-align: text-bottom;
 }
 .plan-card--three span {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(/assets/icons/right-arrow.svg);
+    background-image: url(/assets/icons/green-right-arrow.png);
     vertical-align: text-bottom;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-top: 4px;
-    left: 40px;
 }
 
 footer {
