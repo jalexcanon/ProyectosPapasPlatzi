@@ -399,3 +399,36 @@ main {
     text-align: center;
     color: var(--just-white);
 }
+
+.arrangements-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    min-width: 320px;
+}
+
+.arrangements-container-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.arrangements-container-title h2 {
+    width: 90%;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 30px;
+}
+
+.arrangements-container-title p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    margin-bottom: 50px;
+}
