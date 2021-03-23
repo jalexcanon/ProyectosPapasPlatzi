@@ -131,7 +131,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--warm-black);
 }
 .main-tables-container {
     display: flex;
@@ -170,7 +170,6 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: grey;
     background-color: var(--just-white);
 }
 
@@ -262,7 +261,6 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: grey;
     background-color: var(--just-white);
 }
 
@@ -332,7 +330,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--off-white);
 }
 .product-detail--card {
     width: 90%;
@@ -384,14 +382,14 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color:rgb(223, 220, 220)
 }
 
 .bitcoin-img-container {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url(/assets/img/bitcoinbaby2x.jpg);
+    background-image: url(/assets/img/bitcoinbaby.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
