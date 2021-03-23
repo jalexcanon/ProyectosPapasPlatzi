@@ -435,7 +435,7 @@ main {
 }
 .plans-container--slider {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -444,11 +444,11 @@ main {
 .plans-container--card {
     position: relative; /*para generar el efecto flotante*/
     scroll-snap-align: center;
-    width: 70%;
+    width: 65%;
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: px auto 0;
+    margin: 40px auto 0;
     padding: 0 15px;
     background-color: var(--just-white);
     box-shadow: 0px 4px 8px rgb(89, 73, 38, 0.16);
